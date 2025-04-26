@@ -1,0 +1,94 @@
+body{
+    background-color: black;
+        color: rgb(181, 181, 25);
+      
+}
+
+.anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.theater-container{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    font-family:'Times New Roman', Times, serif;
+
+
+    
+}
+.video-glow {
+    width: 50%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff00ff;
+    animation: glowing 4s infinite alternate;
+    display: block;
+    margin: 0 auto;
+  }
+  .video-container{
+    text-align: center;
+  }
+  
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 10px hsl(0, 89%, 52%), 0 0 20px hsl(0, 89%, 52%);
+    }
+    50% {
+      box-shadow: 0 0 20px #ffff, 0 0 30px #ffff;
+    }
+    100% {
+      box-shadow: 0 0 10px hsl(0, 89%, 52%),  hsl(0, 89%, 52%), 0 0 20px  ;
+    }
+  }
+
+  .buttons {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5;
+    margin-top: 15px;
+  }
+  
+  .buttons:hover {
+    background-color: #e9b7ae;
+  }
+  
+  
+  .center-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+  }
+  
+
+    .scroll-text {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        animation: scroll-left 10s linear infinite;
+        color: rgb(181, 181, 25);
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 5px;
+      }
+      
+      @keyframes scroll-left {
+        0% {
+          transform: translatex(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
